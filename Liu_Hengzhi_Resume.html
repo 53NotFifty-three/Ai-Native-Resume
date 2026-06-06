@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <title>Resume - Liu Hengzhi</title>
     <style>
-        :root { --text-dark: #111827; --text-light: #4b5563; --accent: #2563eb; --border: #d1d5db; }
+        :root { --text-dark: #111827; --text-light: #4b5563; --accent: #2563eb; --border: #e5e7eb; }
         body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--text-dark); max-width: 850px; margin: 0 auto; padding: 40px; }
         header { text-align: center; margin-bottom: 30px; }
         h1 { margin: 0; font-size: 28px; font-weight: 800; letter-spacing: -0.025em; text-transform: uppercase; }
         .contact { font-size: 13px; color: var(--text-light); margin-top: 10px; }
         .contact a { color: var(--accent); text-decoration: none; }
-        h2 { font-size: 16px; font-weight: 700; text-transform: uppercase; border-bottom: 2px solid var(--text-dark); padding-bottom: 4px; margin-top: 25px; margin-bottom: 12px; }
-        .entry { margin-bottom: 18px; }
+        h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; border-bottom: 2px solid var(--text-dark); padding-bottom: 4px; margin-top: 25px; margin-bottom: 12px; letter-spacing: 0.05em; }
+        .entry { margin-bottom: 16px; }
         .entry-header { display: flex; justify-content: space-between; align-items: baseline; font-weight: 700; font-size: 15px; }
         .entry-sub { display: flex; justify-content: space-between; align-items: baseline; font-style: italic; color: var(--text-light); font-size: 14px; margin-bottom: 4px; }
-        ul { margin: 4px 0 0 0; padding-left: 20px; font-size: 14px; }
-        li { margin-bottom: 3px; }
+        ul { margin: 4px 0 0 0; padding-left: 20px; font-size: 14px; color: var(--text-dark); }
+        li { margin-bottom: 4px; }
         .skill-group { margin-bottom: 8px; font-size: 14px; }
         .skill-label { font-weight: 700; color: var(--text-dark); }
         .highlight { color: var(--accent); font-weight: 600; }
+        
+        /* Hidden sections for future use */
+        .hidden-section { display: none; }
     </style>
 </head>
 <body>
@@ -31,8 +34,9 @@
     </div>
 </header>
 
+<!-- 1. EDUCATION -->
 <section id="education">
-    <h2>Education</h2>
+    <h2>1. Education</h2>
     <div class="entry">
         <div class="entry-header">
             <span>National University of Singapore</span>
@@ -49,19 +53,32 @@
             <span>2023 – 2026</span>
         </div>
         <div class="entry-sub">
-            <span>Diploma in Biomedical Engineering with Merit</span>
+            <span>Diploma in Biomedical Engineering with Merit (GPA: 3.91/4.00)</span>
             <span>Singapore</span>
         </div>
         <ul>
-            <li>Cumulative <span class="highlight">GPA: 3.91 / 4.00</span> | Course Bronze Medalist</li>
-            <li>Selected for <strong>TP-NUS Pathway Programme (EE)</strong></li>
-            <li>Awarded Temasek Polytechnic Scholarship (Engineering)</li>
+            <li> <strong> Polytechnic Scholarship (Engineering)</strong>; <strong>Course Bronze Medalist</strong>; Director's List; TP-NUS Pathway Programme (ECE).</li>
         </ul>
     </div>
 </section>
 
-<section id="experience">
-    <h2>Work Experience</h2>
+<!-- 2. SKILLS -->
+<section id="skills">
+    <h2>2. Skills</h2>
+    <div class="skill-group">
+    <span class="skill-label">Programming & Databases:</span> C++, C, Python, Swift, MySQL, Arduino, FreeRTOS.
+    </div>
+    <div class="skill-group">
+        <span class="skill-label">Hardware & Engineering:</span> Embedded Systems Design, Arduino, ESP32, PCB Layout (LCEDA), CAD (Creo, NX, Fusion 360), FDM 3D Printing.
+    </div>
+    <div class="skill-group">
+        <span class="skill-label">Developer Tools:</span> Git/GitHub, Slicer Configuration, Adobe Software (Premiere Pro, Photoshop).
+    </div>
+</section>
+
+<!-- 3. WORK EXPERIENCE -->
+<section id="work-experience">
+    <h2>3. Work Experience</h2>
     <div class="entry">
         <div class="entry-header">
             <span>National University of Singapore (iHealthtech)</span>
@@ -72,54 +89,28 @@
             <span>Singapore</span>
         </div>
         <ul>
-            <li>Strengthened technical and analytical skills by supporting high-precision research activities and ensuring 100% data accuracy.</li>
-            <li>Optimized device designs through proactive equipment troubleshooting and experimental setup refinement.</li>
-            <li>Maintained rigorous laboratory safety standards and ISO protocols during device testing and fabrication.</li>
-        </ul>
-    </div>
-    <div class="entry">
-        <div class="entry-header">
-            <span>Chinese Teacher (Part-time)</span>
-            <span>Apr 2024 – Dec 2024</span>
-        </div>
-        <ul>
-            <li>Developed leadership and classroom management skills, ensuring students received quality educational support.</li>
+            <li>Supported high-precision biomedical and embedded research activities, ensuring precision in data synthesis and hardware testing.</li>
+            <li>Optimized prototype devices via proactive instrumentation troubleshooting and refined experimental setups.</li>
+            <li>Maintained rigorous laboratory safety protocols and documentation aligned with ISO standards.</li>
         </ul>
     </div>
 </section>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <div class="skill-group">
-        <span class="skill-label">Technical & Engineering:</span> Python (Advanced Data Analysis), C Language, Arduino, CAD (Creo, NX, Fusion 360), FDM 3D Printing & Slicer Configuration.
-    </div>
-    <div class="skill-group">
-        <span class="skill-label">Laboratory & Design:</span> ISO Standards, Preventive Maintenance, Adobe Premiere Pro, Photoshop.
-    </div>
-    <div class="skill-group">
-        <span class="skill-label">Soft Skills:</span> Resilient under pressure, Adaptability, Strong Team Collaboration, and Organizational Excellence.
-    </div>
-</section>
-
-<section id="awards">
-    <h2>Awards & Achievements</h2>
-    <ul>
-        <li><strong>WorldSkills 2025:</strong> Qualifying Round 1st Place</li>
-        <li><strong>Director's List:</strong> Multiple Semesters (2023, 2024, 2025)</li>
-        <li><strong>Leadership Programs:</strong> Temasek LEAD Program & Temasek ENGenius Program</li>
-        <li><strong>Competitions:</strong> Electronic Design Competition, RoboCoder Challenge</li>
-    </ul>
-</section>
-
-<section id="projects-cca">
-    <h2>Co-Curricular & Community Work</h2>
+<!-- 4. TECHNICAL PROJECTS -->
+<section id="technical-projects">
+    <h2>4. Technical Projects</h2>
     <div class="entry">
         <div class="entry-header">
-            <span>TP Scholars Overseas Study Trip (Germany)</span>
-            <span>2024</span>
+            <span>Smart Mahjong Play-Board (Embedded System)</span>
+            <span>2025</span>
+        </div>
+        <div class="entry-sub">
+            <span>Independent Developer</span>
+            <span>C++, ESP32, Hardware-Software Co-design</span>
         </div>
         <ul>
-            <li>Organized community service (Thrash Hero-Freiberg) involving waste sorting and collection, enhancing planning and teamwork skills.</li>
+            <li>Designed and built an IoT-based smart play-board prototype utilizing an <strong>ESP32</strong> microcontroller programmed in <strong>C++</strong>.</li>
+            <li>Engineered custom PCB layout designs using <strong>LCEDA</strong> to optimize power distribution and minimize footprint.</li>
         </ul>
     </div>
     <div class="entry">
@@ -127,19 +118,81 @@
             <span>Experiential Research Programme</span>
             <span>2024</span>
         </div>
+        <div class="entry-sub">
+            <span>Research Student</span>
+        </div>
         <ul>
-            <li>Research on electroplating titanium in fuel cell cores to reduce material corrosion.</li>
+            <li>Investigated the electroplating of titanium in fuel cell cores to mitigate material corrosion, analyzing chemical and hardware resilience.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- 5. PUBLICATIONS (Hidden) -->
+<section id="publications" class="hidden-section">
+    <h2>5. Publications</h2>
+</section>
+
+<!-- 6. RESEARCH EXPERIENCE (Hidden) -->
+<section id="research-experience" class="hidden-section">
+    <h2>6. Research Experience</h2>
+</section>
+
+<!-- 7. TEACHING EXPERIENCE -->
+<section id="teaching-experience">
+    <h2>5. Teaching Experience</h2>
+    <div class="entry">
+        <div class="entry-header">
+            <span>Chinese Teacher (Part-time)</span>
+            <span>Apr 2024 – Dec 2024</span>
+        </div>
+        <ul>
+            <li>Developed instructional leadership and clear communication protocols through classroom management and technical student mentorship.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- 8. UNIVERSITY ENGAGEMENT -->
+<section id="university-engagement">
+    <h2>6. University Engagement</h2>
+    <div class="entry">
+        <ul>
+            <li>Incoming Undergraduate Student at School of Computing, National University of Singapore.</li>
+            <li>Active engagement in computing community frameworks and prospective engineering alignment programs.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- 9. CO-CURRICULAR ACTIVITIES -->
+<section id="cocurricular-activities">
+    <h2>7. Co-Curricular Activities</h2>
+    <div class="entry">
+        <div class="entry-header">
+            <span>WorldSkills Singapore (Additive Manufacturing)</span>
+            <span>2024</span>
+        </div>
+        <ul>
+            <li>Achieved <strong>1st Place</strong> in the Qualifying Round, demonstrating elite industrial CAD modeling, engineering design, and precision 3D printing optimization skills.</li>
         </ul>
     </div>
     <div class="entry">
         <div class="entry-header">
-            <span>Violinist, String Ensemble</span>
-            <span>2023 – 2024</span>
+            <span>Electronic Design & RoboCoder Competitions</span>
+            <span>2024</span>
         </div>
         <ul>
-            <li>Performed at charity events including "Magical Autumn XIII" and "TP Harmony Champions 2023."</li>
+            <li>Participated in complex robotics programming and logic circuit design challenges, refining real-time algorithmic execution.</li>
         </ul>
     </div>
+</section>
+
+<!-- 10. ADDITIONAL INFO -->
+<section id="additional-info">
+    <h2>8. Additional Information</h2>
+    <ul>
+        <li><strong>Leadership:</strong> Alumnus of Temasek LEAD and Temasek ENGenius Excellence Programs.</li>
+        <li><strong>Languages:</strong> English (Professional), Mandarin (Native).</li>
+        <li><strong>Interests:</strong> String Ensemble (Violinist, 2023–2024).</li>
+    </ul>
 </section>
 
 </body>
