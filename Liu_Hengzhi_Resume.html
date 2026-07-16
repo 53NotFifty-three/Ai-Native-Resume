@@ -1,9 +1,9 @@
 <!--
 Resume Variant Guide
 
-A = Research / A*STAR
-B = AI Infrastructure / Backend
-C = AI Research / Scientific Computing
+A = Software Engineer (SWE)
+B = AI Infrastructure (AI Infra) [Default Visible]
+C = Backend Engineer (Backend)
 
 Switch by toggling hidden-section class.
 -->
@@ -194,24 +194,52 @@ Switch by toggling hidden-section class.
     <section id="skills">
         <h2>Skills</h2>
 
-        <div class="skill-group">
-            <span class="skill-label">Programming Languages:</span>
-            Python, C++, C, Swift, SQL (MySQL)
+        <!-- Variant A: Software Engineer (Hidden) -->
+        <div class="hidden-section">
+            <div class="skill-group">
+                <span class="skill-label">Programming Languages:</span>
+                Python, C++, C, SQL (MySQL), Swift
+            </div>
+            <div class="skill-group">
+                <span class="skill-label">Systems & Software:</span>
+                Embedded Systems, Real-time Systems (FreeRTOS), LLM Agents, System Design Basics, Firmware Development
+            </div>
+            <div class="skill-group">
+                <span class="skill-label">Tools & Frameworks:</span>
+                Git/GitHub, Linux (basic), FastAPI, React, PostgreSQL, CAD (Fusion 360), Adobe Suite
+            </div>
         </div>
 
-        <div class="skill-group">
-            <span class="skill-label">Systems & Backend:</span>
-            Embedded Systems, Real-time Systems (FreeRTOS), LLM Agents, System Design Basics, Firmware Development
+        <!-- Variant B: AI Infrastructure (Visible) -->
+        <div>
+            <div class="skill-group">
+                <span class="skill-label">Programming Languages:</span>
+                Python, C++, C, SQL (MySQL)
+            </div>
+            <div class="skill-group">
+                <span class="skill-label">Systems & AI Infra:</span>
+                LLM Agents, System Design Basics, Embedded Systems, Real-time Systems (FreeRTOS), Firmware Development
+            </div>
+            <div class="skill-group">
+                <span class="skill-label">Tools & Frameworks:</span>
+                Git/GitHub, Linux, FastAPI, PostgreSQL, AWS (Aurora/IAM), CAD, Adobe Suite
+            </div>
         </div>
 
-        <div class="skill-group">
-            <span class="skill-label">Hardware & Edge Systems:</span>
-            ESP32, Arduino, PCB Design, Sensor Integration
-        </div>
-
-        <div class="skill-group">
-            <span class="skill-label">Tools:</span>
-            Git/GitHub, Linux (basic), CAD (Fusion 360 / NX / Creo), Adobe Suite
+        <!-- Variant C: Backend Engineer (Hidden) -->
+        <div class="hidden-section">
+            <div class="skill-group">
+                <span class="skill-label">Programming Languages:</span>
+                Python, C++, SQL (MySQL), C, Swift
+            </div>
+            <div class="skill-group">
+                <span class="skill-label">Backend & Systems:</span>
+                FastAPI, System Design Basics, LLM Agents, PostgreSQL, AWS (Aurora/IAM), Embedded Systems, FreeRTOS
+            </div>
+            <div class="skill-group">
+                <span class="skill-label">Tools & Utilities:</span>
+                Git/GitHub, Linux, RESTful APIs, CAD, Adobe Suite
+            </div>
         </div>
     </section>
 
@@ -230,14 +258,33 @@ Switch by toggling hidden-section class.
                 <span>Full-Stack Developer</span>
                 <span>React, FastAPI, AWS Aurora, PostgreSQL, LLM Agents</span>
             </div>
-            <ul>
-                <li>Designed a closed-loop B2B SaaS platform for clinical ADHD cognitive assessment, integrating
-                    adaptive pacing calibrated to severity.</li>
-                <li>Implemented IAM database token authentication via AWS SDK and local telemetry batching to optimize
-                    database connection performance.</li>
-                <li>Designed an autonomous AI Copilot Agent via Gemini API to analyze patient telemetry, map target
-                    cognitive domains, and cache multilingual diagnostic reports.</li>
-            </ul>
+            
+            <!-- Variant A: Software Engineer (Hidden) -->
+            <div class="hidden-section">
+                <ul>
+                    <li>Built a B2B clinical assessment platform that automatically adjusts test difficulty based on response severity.</li>
+                    <li>Integrated React front-end interfaces with FastAPI backend services to establish clean real-time data flows.</li>
+                    <li>Deployed an AI assistant using the Gemini API to analyze patient cognitive telemetry and generate structured reports.</li>
+                </ul>
+            </div>
+
+            <!-- Variant B: AI Infrastructure (Visible) -->
+            <div>
+                <ul>
+                    <li>Ensured clinical ADHD assessment precision by building a B2B SaaS platform featuring adaptive pacing calibrated to patient severity.</li>
+                    <li>Reduced data upload lag by implementing local telemetry batching and securing connections via AWS token authentication.</li>
+                    <li>Built an autonomous AI Copilot Agent via Gemini API that automatically processes patient behaviors and caches multilingual reports to avoid API rate limits.</li>
+                </ul>
+            </div>
+
+            <!-- Variant C: Backend (Hidden) -->
+            <div class="hidden-section">
+                <ul>
+                    <li>Ensured secure clinical ADHD assessment by implementing AWS token authentication for a B2B clinical SaaS platform.</li>
+                    <li>Optimized database connection performance by implementing local telemetry batching and tuning AWS Aurora connection overhead.</li>
+                    <li>Accelerated diagnostic report generation by designing a FastAPI backend that integrates Gemini API and caches reports locally.</li>
+                </ul>
+            </div>
         </div>
 
         <!-- Project 2 -->
@@ -249,11 +296,30 @@ Switch by toggling hidden-section class.
                 <span>Independent Systems Developer</span>
                 <span>C++, ESP32, PCB Design, Embedded Firmware</span>
             </div>
-            <ul>
-                <li>Designed and built an ESP32-based smart Mahjong play-board prototype with custom PCB integration.
-                </li>
-                <li>Developed embedded firmware and hardware interfaces for real-time game interaction.</li>
-            </ul>
+            
+            <!-- Variant A: Software Engineer (Hidden) -->
+            <div class="hidden-section">
+                <ul>
+                    <li>Built a smart gaming board prototype from scratch by designing custom circuits (PCBs) and integrating microcontrollers.</li>
+                    <li>Implemented game interaction logic using C++ to capture real-time board states.</li>
+                </ul>
+            </div>
+
+            <!-- Variant B: AI Infrastructure (Visible) -->
+            <div>
+                <ul>
+                    <li>Developed ESP32-based smart play-board hardware with custom PCB integration.</li>
+                    <li>Achieved lag-free, real-time physical-to-digital state updates by writing optimized ESP32 C++ firmware.</li>
+                </ul>
+            </div>
+
+            <!-- Variant C: Backend (Hidden) -->
+            <div class="hidden-section">
+                <ul>
+                    <li>Built an ESP32-based smart play-board featuring custom PCB integration.</li>
+                    <li>Established low-latency hardware-software communication by designing customized serial protocols in embedded firmware.</li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -275,54 +341,43 @@ Switch by toggling hidden-section class.
             </div>
 
             <!-- ========================================================= -->
-            <!-- VERSION A (HIDDEN)                                        -->
-            <!-- Research / A*STAR / Graduate Research / Academia          -->
+            <!-- Variant A (SWE Focus - Hidden)                             -->
             <!-- ========================================================= -->
             <div class="hidden-section">
                 <ul>
-                    <li>Conducted cell culture and biological experiments following established laboratory protocols and
-                        safety standards.</li>
-
-                    <li>Operated microfluidic and particle characterization instruments for experimental studies and
-                        data collection.</li>
-
-                    <li>Analyzed experimental datasets and prepared technical reports to support ongoing research
-                        activities.</li>
-
-                    <li>Assisted in laboratory operations including procurement of research materials, inventory
-                        management, and coordination of experimental workflows.</li>
-
-                    <li>Maintained accurate documentation of experimental procedures and results to ensure research
-                        reproducibility.</li>
+                    <li>Ensured high test consistency by strictly executing standardized experimental procedures.</li>
+                    <li>Maintained laboratory equipment calibration to secure precise measurement data.</li>
+                    <li>Supported research direction by translating complex data records into clear summaries for team reviews.</li>
+                    <li>Avoided inventory delays by monitoring lab stock levels and coordinating vendor orders.</li>
+                    <li>Guarantees research repeatability by establishing structured records for all testing workflows.</li>
                 </ul>
             </div>
 
             <!-- ========================================================= -->
-            <!-- VERSION B (VISIBLE)                                       -->
-            <!-- AI Infra / Backend / Systems / Data Engineering           -->
+            <!-- Variant B (AI Infra Focus - Visible)                       -->
             <!-- ========================================================= -->
-            <ul>
-                <li>Performed biological and microfluidics-based experiments, generating datasets for biomedical
-                    research studies.</li>
-
-                <li>Operated laboratory instrumentation and conducted data collection, validation, and quality checks
-                    across experimental workflows.</li>
-
-                <li>Analyzed experimental results and produced technical reports to support research decision-making.
-                </li>
-
-                <li>Coordinated procurement and laboratory resources to ensure uninterrupted execution of research
-                    activities.</li>
-
-                <li>Maintained structured documentation and experimental records to improve workflow traceability and
-                    reproducibility.</li>
-            </ul>
+            <div>
+                <ul>
+                    <li>Generated high-quality experimental datasets for biomedical research by setting up microscale testing workflows.</li>
+                    <li>Ensured data integrity across all testing pipelines by performing comprehensive validation and validation checks on hardware instruments.</li>
+                    <li>Guided project decision-making by converting complex experimental sensor data into clear, actionable reports.</li>
+                    <li>Maintained continuous lab operations by optimizing the allocation of shared equipment resources.</li>
+                    <li>Improved data traceability by establishing structured digital documentation standards for all experimental records.</li>
+                </ul>
+            </div>
 
             <!-- ========================================================= -->
-            <!-- FUTURE VERSION C (OPTIONAL)                              -->
-            <!-- AI Research / ML Research / Scientific Computing         -->
-            <!-- Reserved for future customization                         -->
+            <!-- Variant C (Backend Focus - Hidden)                         -->
             <!-- ========================================================= -->
+            <div class="hidden-section">
+                <ul>
+                    <li>Generated clean research datasets by executing microscale biological testing procedures.</li>
+                    <li>Ensured source data accuracy by executing routine validation tests on laboratory instruments.</li>
+                    <li>Translated experimental data into clear, structured technical reports for stakeholders.</li>
+                    <li>Prevented schedule bottlenecks by managing resource procurement and coordinating equipment timetables.</li>
+                    <li>Enhanced data auditability by setting up structured digital documentation guidelines.</li>
+                </ul>
+            </div>
 
         </div>
     </section>

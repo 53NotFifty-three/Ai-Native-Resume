@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resume - Liu Hengzhi (Software Engineer)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --text-dark: #111827;
+            --text-light: #4b5563;
+            --accent: #2563eb;
+            --border: #e5e7eb;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            text-transform: uppercase;
+        }
+
+        .contact {
+            font-size: 13px;
+            color: var(--text-light);
+            margin-top: 10px;
+        }
+
+        .contact a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--text-dark);
+            padding-bottom: 4px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            letter-spacing: 0.05em;
+        }
+
+        .entry {
+            margin-bottom: 16px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .entry-sub {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-style: italic;
+            color: var(--text-light);
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+
+        ul {
+            margin: 4px 0 0 0;
+            padding-left: 20px;
+            font-size: 14px;
+            color: var(--text-dark);
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        .skill-group {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .skill-label {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        strong {
+            font-weight: 600;
+        }
+
+        .highlight {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        @media print {
+            body {
+                padding: 20px 40px;
+                font-size: 13.5px;
+                line-height: 1.5;
+            }
+
+            h2 {
+                margin-top: 20px;
+                margin-bottom: 8px;
+            }
+
+            .entry {
+                margin-bottom: 12px;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Liu Hengzhi</h1>
+        <div class="contact">
+            Email: Liuhengzhi53@foxmail.com | HP: +65 89422843 <br>
+            LinkedIn: www.linkedin.com/in/hengzhi-liu | GitHub: github.com/53NotFifty-three
+        </div>
+    </header>
+
+    <!-- 1. EDUCATION -->
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>National University of Singapore</span>
+                <span>2026 – Present</span>
+            </div>
+            <div class="entry-sub">
+                <span>Bachelor of Computing in Computer Science (Expected to graduate in 3 years)</span>
+                <span>Singapore</span>
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>Temasek Polytechnic</span>
+                <span>2023 – 2026</span>
+            </div>
+            <div class="entry-sub">
+                <span>Diploma in Biomedical Engineering with Merit (GPA: 3.91/4.00)</span>
+                <span>Singapore</span>
+            </div>
+            <ul>
+                <li>Polytechnic Scholarship (Engineering); Course Bronze Medalist; Director’s List</li>
+                <li>Focused on embedded systems, hardware-software co-design, and applied engineering research</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 2. SKILLS -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-group">
+            <span class="skill-label">Programming Languages:</span>
+            Python, C++, C, SQL (MySQL), Swift
+        </div>
+        <div class="skill-group">
+            <span class="skill-label">Systems & Software:</span>
+            Embedded Systems, Real-time Systems (FreeRTOS), LLM Agents, System Design Basics, Firmware Development
+        </div>
+        <div class="skill-group">
+            <span class="skill-label">Tools & Frameworks:</span>
+            Git/GitHub, Linux (basic), FastAPI, React, PostgreSQL, CAD (Fusion 360), Adobe Suite
+        </div>
+    </section>
+
+    <!-- 3. TECHNICAL PROJECTS -->
+    <section id="technical-projects">
+        <h2>Technical Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="entry">
+            <div class="entry-header">
+                <span>DTx Cognitive SaaS (ADHD Therapeutics)</span>
+            </div>
+            <div class="entry-sub">
+                <span>Full-Stack Developer</span>
+                <span>React, FastAPI, AWS Aurora, PostgreSQL, LLM Agents</span>
+            </div>
+            <ul>
+                <li>Built a B2B clinical assessment platform that automatically adjusts test difficulty based on response severity.</li>
+                <li>Integrated React front-end interfaces with FastAPI backend services to establish clean real-time data flows.</li>
+                <li>Deployed an AI assistant using the Gemini API to analyze patient cognitive telemetry and generate structured reports.</li>
+            </ul>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="entry">
+            <div class="entry-header">
+                <span>Smart Mahjong Play-Board</span>
+            </div>
+            <div class="entry-sub">
+                <span>Independent Systems Developer</span>
+                <span>C++, ESP32, PCB Design, Embedded Firmware</span>
+            </div>
+            <ul>
+                <li>Built a smart gaming board prototype from scratch by designing custom circuits (PCBs) and integrating microcontrollers.</li>
+                <li>Implemented game interaction logic using C++ to capture real-time board states.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 4. WORK EXPERIENCE -->
+    <section id="work-experience">
+        <h2>Work Experience</h2>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>National University of Singapore (iHealthtech)</span>
+                <span>Mar 2025 – Jul 2025</span>
+            </div>
+
+            <div class="entry-sub">
+                <span>Research Assistant Intern</span>
+                <span>Singapore</span>
+            </div>
+
+            <ul>
+                <li>Ensured high test consistency by strictly executing standardized experimental procedures.</li>
+                <li>Maintained laboratory equipment calibration to secure precise measurement data.</li>
+                <li>Supported research direction by translating complex data records into clear summaries for team reviews.</li>
+                <li>Avoided inventory delays by monitoring lab stock levels and coordinating vendor orders.</li>
+                <li>Guarantees research repeatability by establishing structured records for all testing workflows.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 8. UNIVERSITY ENGAGEMENT -->
+    <section id="university-engagement">
+        <h2>University Engagement</h2>
+        <div class="entry">
+            <ul>
+                <li>Incoming Undergraduate Student at School of Computing, National University of Singapore.</li>
+                <li>Active engagement in computing community frameworks and prospective engineering alignment programs.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 9. CO-CURRICULAR ACTIVITIES -->
+    <section id="cocurricular-activities">
+        <h2>Co-Curricular Activities</h2>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>WorldSkills Singapore (Additive Manufacturing)</span>
+                <span>2024</span>
+            </div>
+            <ul>
+                <li>Won 1st Place (Qualifying Round) in a national engineering competition by design-modeling and optimizing 3D printable products.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span>Electronic Design & Robotics Competitions</span>
+                <span>2024</span>
+            </div>
+            <ul>
+                <li>Solved complex robotics challenges by programming real-time control software and designing custom circuits.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 10. ADDITIONAL INFO -->
+    <section id="additional-info">
+        <h2>Additional Information</h2>
+
+        <ul>
+            <li><strong>Leadership:</strong> Temasek LEAD & ENGenius Excellence Programs alumnus</li>
+            <li><strong>Languages:</strong> English (Professional), Mandarin (Native)</li>
+            <li><strong>Interests:</strong> Distributed Systems, AI Infrastructure, Embedded Systems, Scientific Computing</li>
+        </ul>
+    </section>
+
+</body>
+
+</html>
