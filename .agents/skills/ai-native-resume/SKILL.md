@@ -64,6 +64,11 @@ When drafting or revising accomplishments, organize them around these four core 
 * Always write bullet points starting with the impact/result (verb-first) followed by the action.
 * **Example**: Use *"Reduced Z workflow turnaround time by building X data analysis pipeline and restructuring Y channel"* instead of *"Built X data analysis pipeline and restructured Y channel, reducing Z workflow turnaround time"*.
 
+### Scenario & Skill Context (业务场景与技能融入)
+* **Describe Business Scenarios**: Bullet points in experiences and projects must not only state what was done, but must specify the business scenario or context under which the work was performed.
+* **Explicit Skill Integration**: Explicitly highlight the skills used in the experiences and projects.
+* **Standard Phrasing**: Utilize the specific phrase `"Leveraged knowledge in [Skill/Domain] to..."` to introduce these skill applications.
+
 ### Truthfulness & Accuracy (No Hallucinations)
 * **Never add skills or tools** that the candidate has not explicitly mentioned or used in their original/approved content. Avoid fabricating technologies.
 * **Strictly follow the user's provided information** when rewriting bullet points. Do not invent project statistics, percentages, or achievements.
@@ -97,6 +102,10 @@ When drafting or revising accomplishments, organize them around these four core 
 * **Skill & Category Sequencing**:
   - **Category Sequencing**: Dynamically order the skill groups (e.g. placing "Hardware & Edge Systems" first for embedded roles, or "Programming Languages" first for general software roles).
   - **Individual Skill Prioritization**: Within each skill group, sort specific skills so that the most relevant ones to the target job appear first (e.g. placing "Swift" first for iOS roles, or "LLM Agents" first for AI application roles).
+* **Proficient vs. Familiar Separation**:
+  - Clearly separate skills by proficiency level (e.g., proficient vs. familiar/basic) within each skill group.
+  - Follow the format: `<Category>: (Proficient) skill1, skill2, (Familiar) skill3, skill4`.
+  - Example: `Programming Languages: (Proficient) Python, SQL, (Familiar) Java, C++`.
 
 ### Technical Projects
 * **Remove years/dates** from the project entries. Focus purely on technical accomplishments and impact.
