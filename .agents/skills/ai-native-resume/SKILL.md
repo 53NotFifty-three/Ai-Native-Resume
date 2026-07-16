@@ -106,6 +106,8 @@ When drafting or revising accomplishments, organize them around these four core 
   - Clearly separate skills by proficiency level (e.g., proficient vs. familiar/basic) within each skill group.
   - Follow the format: `<Category>: (Proficient) skill1, skill2, (Familiar) skill3, skill4`.
   - Example: `Programming Languages: (Proficient) Python, SQL, (Familiar) Java, C++`.
+* **Keep All Skills in All Variants**:
+  - Always list the candidate's complete skillset across all resume variants. Do not omit or filter out skills based on target role relevance (e.g., keep Swift in the AI Infrastructure variant). This ensures all versions maintain a comprehensive profile of the candidate.
 
 ### Technical Projects
 * **Remove years/dates** from the project entries. Focus purely on technical accomplishments and impact.
