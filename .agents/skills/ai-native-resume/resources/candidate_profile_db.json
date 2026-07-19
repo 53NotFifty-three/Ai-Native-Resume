@@ -1,0 +1,159 @@
+{
+  "candidate": {
+    "name": "Liu Hengzhi",
+    "contact": {
+      "email": "Liuhengzhi53@foxmail.com",
+      "phone": "+65 89422843",
+      "linkedin": "www.linkedin.com/in/hengzhi-liu",
+      "github": "github.com/53NotFifty-three"
+    }
+  },
+  "education": [
+    {
+      "institution": "National University of Singapore",
+      "location": "Singapore",
+      "period": "2026 – 2029",
+      "degree": "Bachelor of Computing in Computer Science",
+      "tuition_grant": true,
+      "details": []
+    },
+    {
+      "institution": "Temasek Polytechnic",
+      "location": "Singapore",
+      "period": "2023 – 2026",
+      "degree": "Diploma in Biomedical Engineering with Merit",
+      "gpa": "3.91/4.00",
+      "honors": [
+        "Polytechnic Scholarship (Engineering)",
+        "Course Bronze Medalist",
+        "Director’s List"
+      ],
+      "focus": [
+        "Embedded systems",
+        "Hardware-software co-design",
+        "Applied engineering research"
+      ]
+    }
+  ],
+  "skills_inventory": {
+    "programming_languages": {
+      "proficient": ["Python", "C++", "C"],
+      "familiar": ["SQL", "MySQL", "Swift"]
+    },
+    "systems_and_architecture": [
+      "Embedded Systems",
+      "Real-time Systems (FreeRTOS)",
+      "LLM Agents",
+      "System Design Basics",
+      "Firmware Development",
+      "Microscale Telemetry & Data Pipelines"
+    ],
+    "tools_frameworks_and_infra": [
+      "Git/GitHub",
+      "Linux",
+      "FastAPI",
+      "React",
+      "PostgreSQL",
+      "MySQL",
+      "AWS (Aurora/IAM)",
+      "RESTful APIs",
+      "CAD (Fusion 360, PTC Creo)",
+      "Adobe Suite",
+      "PCB Design"
+    ]
+  },
+  "technical_projects": [
+    {
+      "name": "DTx Cognitive SaaS (ADHD Therapeutics)",
+      "period": "2026",
+      "role": "Full-Stack Developer",
+      "tech_stack": ["React", "FastAPI", "AWS Aurora", "PostgreSQL", "LLM Agents", "Gemini API"],
+      "variants": {
+        "SWE": [
+          "Built a B2B clinical assessment platform that automatically adjusts test difficulty based on response severity.",
+          "Integrated React front-end interfaces with FastAPI backend services to establish clean real-time data flows.",
+          "Deployed an AI assistant using the Gemini API to analyze patient cognitive telemetry and generate structured reports."
+        ],
+        "AI_Infra": [
+          "Ensured clinical ADHD assessment precision by building a B2B SaaS platform featuring adaptive pacing calibrated to patient severity.",
+          "Reduced data upload lag by implementing local telemetry batching and securing connections via AWS token authentication.",
+          "Built an autonomous AI Copilot Agent via Gemini API that automatically processes patient behaviors and caches multilingual reports to avoid API rate limits."
+        ],
+        "Backend": [
+          "Ensured secure clinical ADHD assessment by implementing AWS token authentication for a B2B clinical SaaS platform.",
+          "Optimized database connection performance by implementing local telemetry batching and tuning AWS Aurora connection overhead.",
+          "Accelerated diagnostic report generation by designing a FastAPI backend that integrates Gemini API and caches reports locally."
+        ]
+      }
+    },
+    {
+      "name": "Smart Mahjong Play-Board",
+      "period": "2026",
+      "role": "Independent Systems Developer",
+      "tech_stack": ["C++", "ESP32", "PCB Design", "Embedded Firmware", "Serial Protocols"],
+      "variants": {
+        "SWE": [
+          "Built a smart gaming board prototype from scratch by designing custom circuits (PCBs) and integrating microcontrollers.",
+          "Implemented game interaction logic using C++ to capture real-time board states."
+        ],
+        "AI_Infra": [
+          "Developed ESP32-based smart play-board hardware with custom PCB integration.",
+          "Achieved lag-free, real-time physical-to-digital state updates by writing optimized ESP32 C++ firmware."
+        ],
+        "Backend": [
+          "Built an ESP32-based smart play-board featuring custom PCB integration.",
+          "Established low-latency hardware-software communication by designing customized serial protocols in embedded firmware."
+        ]
+      }
+    }
+  ],
+  "work_experience": [
+    {
+      "company": "National University of Singapore (iHealthtech)",
+      "role": "Research Assistant Intern",
+      "period": "Mar 2025 – Jul 2025",
+      "location": "Singapore",
+      "active_bullets": {
+        "SWE": [
+          "Ensured high test consistency by strictly executing standardized experimental procedures.",
+          "Maintained laboratory equipment calibration to secure precise measurement data.",
+          "Guaranteed research repeatability by establishing structured records for all testing workflows."
+        ],
+        "AI_Infra": [
+          "Generated high-quality experimental datasets for biomedical research by setting up microscale testing workflows.",
+          "Ensured data integrity across all testing pipelines by performing comprehensive validation checks on hardware instruments.",
+          "Improved data traceability by establishing structured digital documentation standards for all experimental records."
+        ],
+        "Backend": [
+          "Generated clean research datasets by executing microscale biological testing procedures.",
+          "Ensured source data accuracy by executing routine validation tests on laboratory instruments.",
+          "Enhanced data auditability by setting up structured digital documentation guidelines."
+        ]
+      },
+      "raw_archived_bullets": [
+        "Guided project decision-making by converting complex experimental sensor data into clear, actionable reports.",
+        "Maintained continuous lab operations by optimizing the allocation of shared equipment resources.",
+        "Supported research direction by translating complex data records into clear summaries for team reviews.",
+        "Avoided inventory delays by monitoring lab stock levels and coordinating vendor orders."
+      ]
+    }
+  ],
+  "competitions_and_activities": [
+    {
+      "title": "WorldSkills Singapore (Additive Manufacturing)",
+      "period": "2024",
+      "award": "1st Place (TP Selection Round / 校内选拔)",
+      "details": "Demonstrated advanced CAD modeling, additive manufacturing optimization, and engineering precision design."
+    },
+    {
+      "title": "Electronic Design & Robotics Competitions",
+      "period": "2024",
+      "details": "Developed embedded logic systems and real-time control algorithms for robotics challenges."
+    }
+  ],
+  "leadership_and_additional_info": {
+    "programs": ["Temasek LEAD & ENGenius Excellence Programs alumnus"],
+    "languages": ["English (Professional)", "Mandarin (Native)"],
+    "interests": ["Distributed Systems", "AI Infrastructure", "Embedded Systems", "Scientific Computing"]
+  }
+}

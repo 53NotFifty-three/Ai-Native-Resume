@@ -41,8 +41,10 @@ As a strategic career coach, provide personalized guidance based on the candidat
   * 提供一段可以直接用于求职信、领英（LinkedIn）个人简介或自我介绍的精炼文案。这段话需要将候选人的经历、技能和热情与目标岗位的需求完美结合，建立情感共鸣。
 
 ### Variant Management (Master Template & Role-Specific Outputs)
-* **Master Template File (`Liu_Hengzhi_Resume.html`)**: Serves as the single source of truth containing all candidate information. All position variants (e.g. Variant A = SWE, Variant B = AI Infra, Variant C = Backend) must coexist inside this file, organized and toggled using `class="hidden-section"`.
-* **Role-Specific Output Files**: For target position applications, separate clean HTML files (e.g., `Liu_Hengzhi_Resume_SWE.html`, `Liu_Hengzhi_Resume_AI_Infra.html`, `Liu_Hengzhi_Resume_Backend.html`) must be generated from the master template.
+* **Master Profile Database (`resources/candidate_profile_db.json`)**: Contains the candidate's complete, raw, un-filtered profile database (including all raw bullet points, full skill inventory, awards, and historical details). Use this database when generating new resume variants or querying comprehensive candidate information.
+* **Master Template File (`Liu_Hengzhi_Resume.html`)**: Serves as the single source of truth containing all candidate information. All position variants (e.g. Variant A = SWE, Variant B = AI Infra, Variant C = Backend, Variant D = Embedded Systems & HealthTech) must coexist inside this file, organized and toggled using `class="hidden-section"`.
+* **Role-Specific Output Files**: For target position applications, separate clean HTML files must be generated from the master template.
+* **File Naming Convention (文件名命名规范)**: Output resume files (HTML/PDF) must follow the standard naming structure: `姓名_Resume_岗位_日期` (e.g., `Liu_Hengzhi_Resume_SWE_20260719.html` or `Liu_Hengzhi_Resume_AI_Infra_20260719.pdf`).
 * **Content Extraction**: In the role-specific output files, keep **only** the active content block for that role, and strip away all hidden section wrappers, other variants' blocks, and comments to produce a clean, lightweight, single-purpose resume file.
 
 ---
@@ -64,16 +66,18 @@ When drafting or revising accomplishments, organize them around these four core 
 * Always write bullet points starting with the impact/result (verb-first) followed by the action.
 * **Example**: Use *"Reduced Z workflow turnaround time by building X data analysis pipeline and restructuring Y channel"* instead of *"Built X data analysis pipeline and restructured Y channel, reducing Z workflow turnaround time"*.
 
-### Scenario & Skill Context (业务场景与技能融入)
-* **Describe Business Scenarios**: Bullet points in experiences and projects must not only state what was done, but must specify the business scenario or context under which the work was performed.
-* **Explicit Skill Integration**: Explicitly highlight the skills used in the experiences and projects.
-* **Standard Phrasing**: Utilize the specific phrase `"Leveraged knowledge in [Skill/Domain] to..."` to introduce these skill applications.
+### Scenario & Skill Context (业务场景与技能融入 - 可选/Optional)
+* **Contextual Framing (Optional)**: Bullet points in experiences and projects may describe the business scenario or context (such as specific challenges, scale, or objectives) under which the work was performed to provide clearer background.
+* **Skill Integration (Optional)**: Relevant technical skills can be explicitly highlighted within the descriptions of experiences and projects when it enhances credibility.
+* **Phrasing Recommendation (Optional)**: When demonstrating skill application, the phrasing `"Leveraged knowledge in [Skill/Domain] to..."` may be utilized. Descriptions must maintain a strictly objective, third-person professional tone, avoiding any personal pronouns (e.g., "I", "my", "we").
 
 ### Truthfulness & Accuracy (No Hallucinations)
 * **Never add skills or tools** that the candidate has not explicitly mentioned or used in their original/approved content. Avoid fabricating technologies.
 * **Strictly follow the user's provided information** when rewriting bullet points. Do not invent project statistics, percentages, or achievements.
 * **Avoid absolute quantitative claims** (e.g., '100% test consistency', '100% uptime') unless explicitly specified or backed by the candidate's original text (e.g., 'improved speed by 20%'). Use qualitative terms like 'high consistency', 'continuous operations', or 'minimized downtime' instead.
-* **Post-Modification Check**: After updating the resume, perform a strict quality check to verify that all revised points map 1-to-1 with facts in the source materials and contain no hallucinations.
+### Concise One-Line Bullet Constraint (单行描述与词数约束)
+* **Word Count Constraint**: Every experience, project, or activity bullet point must be strictly between **10 to 15 words**.
+* **Single-Line Formatting**: Bullet points must be formulated concisely so that each item renders cleanly on **exactly a single line** in the standard 600px width and PDF print layout, ensuring maximum scannability and visual tightness.
 
 ---
 
@@ -106,11 +110,11 @@ When drafting or revising accomplishments, organize them around these four core 
   - Clearly separate skills by proficiency level (e.g., proficient vs. familiar/basic) within each skill group.
   - Follow the format: `<Category>: (Proficient) skill1, skill2, (Familiar) skill3, skill4`.
   - Example: `Programming Languages: (Proficient) Python, SQL, (Familiar) Java, C++`.
-* **Keep All Skills in All Variants**:
-  - Always list the candidate's complete skillset across all resume variants. Do not omit or filter out skills based on target role relevance (e.g., keep Swift in the AI Infrastructure variant). This ensures all versions maintain a comprehensive profile of the candidate.
+* **Role Relevance & Skill Filtering (岗位相关性与技能筛选)**:
+  - Filter out or omit skills that are irrelevant to the target role (e.g., omit Swift for non-iOS roles such as AI Infra, Backend, or general SWE). Ensure listed skills directly align with the target position's core requirements.
 
 ### Technical Projects
-* **Remove years/dates** from the project entries. Focus purely on technical accomplishments and impact.
+* **Project Dates (项目日期)**: Include completion or development years (e.g., `2026`) aligned to the right in `.entry-header`.
 * Make sure project titles are clean and sub-headings match the target domain keywords.
 
 ---
@@ -140,7 +144,7 @@ Any modifications, additions, or expansions to the resume HTML must strictly adh
 
 ### Component Layout Specifications
 1. **Resume Container (`body`)**:
-   * Max width: `850px`
+   * Max width: `600px`
    * Desktop padding: `40px`
    * Print padding: `20px 40px`
 2. **Main Header (`header`)**:

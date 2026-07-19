@@ -19,28 +19,28 @@
             font-family: 'Inter', -apple-system, sans-serif;
             line-height: 1.6;
             color: var(--text-dark);
-            max-width: 850px;
+            max-width: 600px;
             margin: 0 auto;
             padding: 40px;
         }
 
         header {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         h1 {
             margin: 0;
-            font-size: 28px;
+            font-size: 24px;
             font-weight: 700;
             letter-spacing: -0.025em;
             text-transform: uppercase;
         }
 
         .contact {
-            font-size: 13px;
+            font-size: 11px;
             color: var(--text-light);
-            margin-top: 10px;
+            margin-top: 8px;
         }
 
         .contact a {
@@ -49,18 +49,20 @@
         }
 
         h2 {
-            font-size: 15px;
+            font-size: 13px;
             font-weight: 600;
             text-transform: uppercase;
             border-bottom: 2px solid var(--text-dark);
-            padding-bottom: 4px;
-            margin-top: 25px;
-            margin-bottom: 12px;
+            padding-bottom: 3px;
+            margin-top: 18px;
+            margin-bottom: 8px;
             letter-spacing: 0.05em;
+            page-break-after: avoid;
+            break-after: avoid;
         }
 
         .entry {
-            margin-bottom: 16px;
+            margin-bottom: 12px;
         }
 
         .entry-header {
@@ -68,7 +70,7 @@
             justify-content: space-between;
             align-items: baseline;
             font-weight: 600;
-            font-size: 15px;
+            font-size: 13px;
         }
 
         .entry-sub {
@@ -77,24 +79,24 @@
             align-items: baseline;
             font-style: italic;
             color: var(--text-light);
-            font-size: 14px;
-            margin-bottom: 4px;
+            font-size: 12px;
+            margin-bottom: 3px;
         }
 
         ul {
-            margin: 4px 0 0 0;
+            margin: 3px 0 0 0;
             padding-left: 20px;
-            font-size: 14px;
+            font-size: 12px;
             color: var(--text-dark);
         }
 
         li {
-            margin-bottom: 4px;
+            margin-bottom: 3px;
         }
 
         .skill-group {
-            margin-bottom: 8px;
-            font-size: 14px;
+            margin-bottom: 6px;
+            font-size: 12px;
         }
 
         .skill-label {
@@ -113,19 +115,18 @@
 
         @media print {
             body {
-                padding: 20px 40px;
-                font-size: 13.5px;
-                line-height: 1.5;
+                padding: 15px 35px;
+                font-size: 11px;
+                line-height: 1.45;
             }
 
             h2 {
-                margin-top: 20px;
-                margin-bottom: 8px;
+                margin-top: 14px;
+                margin-bottom: 6px;
             }
 
             .entry {
-                margin-bottom: 12px;
-                page-break-inside: avoid;
+                margin-bottom: 10px;
             }
         }
     </style>
@@ -148,26 +149,24 @@
         <div class="entry">
             <div class="entry-header">
                 <span>National University of Singapore</span>
-                <span>2026 – Present</span>
+                <span>2026 – 2029</span>
             </div>
             <div class="entry-sub">
-                <span>Bachelor of Computing in Computer Science (Expected to graduate in 3 years)</span>
-                <span>Singapore</span>
+                <span>Bachelor of Computing in Computer Science (Tuition Grant)</span>
             </div>
         </div>
 
         <div class="entry">
             <div class="entry-header">
-                <span>Temasek Polytechnic</span>
+                <span>Temasek Polytechnic, Singapore</span>
                 <span>2023 – 2026</span>
             </div>
             <div class="entry-sub">
-                <span>Diploma in Biomedical Engineering with Merit (GPA: 3.91/4.00)</span>
-                <span>Singapore</span>
+                <span>Diploma in Biomedical Engineering with Merit</span>
             </div>
             <ul>
-                <li>Polytechnic Scholarship (Engineering); Course Bronze Medalist; Director’s List</li>
-                <li>Focused on embedded systems, hardware-software co-design, and applied engineering research</li>
+                <li>Awarded Polytechnic Scholarship (Engineering), Course Bronze Medalist, and Director’s List honors.</li>
+                <li>Focused coursework on embedded systems, hardware-software co-design, and applied engineering research.</li>
             </ul>
         </div>
     </section>
@@ -177,15 +176,15 @@
         <h2>Skills</h2>
         <div class="skill-group">
             <span class="skill-label">Programming Languages:</span>
-            <strong>(Proficient)</strong> Python, C++, C &nbsp;|&nbsp; <strong>(Familiar)</strong> SQL (MySQL), Swift
+            <strong>(Proficient)</strong> Python, C++, C, <strong>(Familiar)</strong> SQL
         </div>
         <div class="skill-group">
             <span class="skill-label">Backend & Systems:</span>
-            FastAPI, System Design Basics, LLM Agents, PostgreSQL, AWS (Aurora/IAM), Embedded Systems, FreeRTOS
+            FastAPI, System Design Basics, LLM Agents, PostgreSQL, AWS (Aurora), Embedded Systems, FreeRTOS
         </div>
         <div class="skill-group">
             <span class="skill-label">Tools & Utilities:</span>
-            Git/GitHub, Linux, RESTful APIs, CAD, Adobe Suite
+            Git/GitHub, Linux, RESTful APIs, MySQL, CAD, Adobe Suite
         </div>
     </section>
 
@@ -197,15 +196,16 @@
         <div class="entry">
             <div class="entry-header">
                 <span>DTx Cognitive SaaS (ADHD Therapeutics)</span>
+                <span>2026</span>
             </div>
             <div class="entry-sub">
                 <span>Full-Stack Developer</span>
                 <span>React, FastAPI, AWS Aurora, PostgreSQL, LLM Agents</span>
             </div>
             <ul>
-                <li>Ensured secure clinical ADHD assessment by implementing AWS token authentication for a B2B clinical SaaS platform.</li>
-                <li>Optimized database connection performance by implementing local telemetry batching and tuning AWS Aurora connection overhead.</li>
-                <li>Accelerated diagnostic report generation by designing a FastAPI backend that integrates Gemini API and caches reports locally.</li>
+                <li>Secured clinical ADHD SaaS platform endpoints by implementing AWS token-based authentication.</li>
+                <li>Optimized database query performance by batching telemetry and tuning AWS Aurora overhead.</li>
+                <li>Accelerated diagnostic report generation by building a FastAPI backend with local caching.</li>
             </ul>
         </div>
 
@@ -213,13 +213,14 @@
         <div class="entry">
             <div class="entry-header">
                 <span>Smart Mahjong Play-Board</span>
+                <span>2026</span>
             </div>
             <div class="entry-sub">
                 <span>Independent Systems Developer</span>
                 <span>C++, ESP32, PCB Design, Embedded Firmware</span>
             </div>
             <ul>
-                <li>Built an ESP32-based smart play-board featuring custom PCB integration.</li>
+                <li>Engineered an ESP32-based smart play-board featuring custom PCB circuit integration.</li>
                 <li>Established low-latency hardware-software communication by designing customized serial protocols in embedded firmware.</li>
             </ul>
         </div>
@@ -243,23 +244,12 @@
             <ul>
                 <li>Generated clean research datasets by executing microscale biological testing procedures.</li>
                 <li>Ensured source data accuracy by executing routine validation tests on laboratory instruments.</li>
-                <li>Translated experimental data into clear, structured technical reports for stakeholders.</li>
-                <li>Prevented schedule bottlenecks by managing resource procurement and coordinating equipment timetables.</li>
                 <li>Enhanced data auditability by setting up structured digital documentation guidelines.</li>
             </ul>
         </div>
     </section>
 
-    <!-- 8. UNIVERSITY ENGAGEMENT -->
-    <section id="university-engagement">
-        <h2>University Engagement</h2>
-        <div class="entry">
-            <ul>
-                <li>Incoming Undergraduate Student at School of Computing, National University of Singapore.</li>
-                <li>Active engagement in computing community frameworks and prospective engineering alignment programs.</li>
-            </ul>
-        </div>
-    </section>
+
 
     <!-- 9. CO-CURRICULAR ACTIVITIES -->
     <section id="cocurricular-activities">
@@ -271,7 +261,7 @@
                 <span>2024</span>
             </div>
             <ul>
-                <li>Won 1st Place (Qualifying Round) in a national engineering competition by design-modeling and optimizing 3D printable products.</li>
+                <li>Won 1st Place (TP Selection Round) by modeling and optimizing 3D printable products.</li>
             </ul>
         </div>
 
@@ -281,21 +271,11 @@
                 <span>2024</span>
             </div>
             <ul>
-                <li>Solved complex robotics challenges by programming real-time control software and designing custom circuits.</li>
+                <li>Developed embedded logic systems and real-time control algorithms for robotics challenges.</li>
             </ul>
         </div>
     </section>
 
-    <!-- 10. ADDITIONAL INFO -->
-    <section id="additional-info">
-        <h2>Additional Information</h2>
-
-        <ul>
-            <li><strong>Leadership:</strong> Temasek LEAD & ENGenius Excellence Programs alumnus</li>
-            <li><strong>Languages:</strong> English (Professional), Mandarin (Native)</li>
-            <li><strong>Interests:</strong> Distributed Systems, AI Infrastructure, Embedded Systems, Scientific Computing</li>
-        </ul>
-    </section>
 
 </body>
 
