@@ -12,7 +12,7 @@
     {
       "institution": "National University of Singapore",
       "location": "Singapore",
-      "period": "2026 – 2029",
+      "period": "2026 – June 2029",
       "degree": "Bachelor of Computing in Computer Science",
       "tuition_grant": true,
       "details": []
@@ -53,7 +53,6 @@
       "Linux",
       "FastAPI",
       "React",
-      "PostgreSQL",
       "MySQL",
       "AWS (Aurora/IAM)",
       "RESTful APIs",
@@ -67,7 +66,7 @@
       "name": "DTx Cognitive SaaS (ADHD Therapeutics)",
       "period": "2026",
       "role": "Full-Stack Developer",
-      "tech_stack": ["React", "FastAPI", "AWS Aurora", "PostgreSQL", "LLM Agents", "Gemini API"],
+      "tech_stack": ["React", "FastAPI", "AWS Aurora", "LLM Agents", "Gemini API"],
       "variants": {
         "SWE": [
           "Built a B2B clinical assessment platform that automatically adjusts test difficulty based on response severity.",
